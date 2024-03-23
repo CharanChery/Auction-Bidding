@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://cdn.wallpapersafari.com/61/75/Ymx59h.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 1%;
+  background: transparent;
+}
+
+.logo {
+  /* font-size: 30px;
+  font-weight: 700; */
+  width: 300px;
+  height: 90px;
+
+  /* color: rgb(255, 162, 0); */
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease-in-out;
+}
+.navlist a:hover {
+  border-bottom: 2px solid honeydew;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.searchbar form {
+  display: flex;
+  margin: 0;
+}
+.searchbar input {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.searchbar input:hover {
+  border: 2px solid #65dff6;
+}
+.searchbar button {
+  background: transparent;
+  border: 5px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  font-size: 29px;
+  color: #e6f5ff;
+}
+.menu-icon {
+  color: white;
+  font-size: 25px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+.user-profile {
+  border-radius: 50%;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+@media (max-width: 1535px) {
+  header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+}
+@media (max-width: 990px) {
+  .menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+  }
+  .navlist a {
+    margin-left: 0;
+    display: block;
+    margin: 7px 0;
+  }
+  .navlist.open {
+    right: 0;
+  }
+  .user-profile {
+    display: block;
+  }
+  .searchbar {
+    display: block;
+  }
+}
