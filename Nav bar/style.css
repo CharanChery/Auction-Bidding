@@ -94,7 +94,8 @@ header {
 }
 .user-profile {
   border-radius: 10%;
-  width: 30px;
+  /* width: 30px; */
+  font-size: 20px;
   cursor: pointer;
   margin-right: 50px;
   margin-left: -50px;
@@ -104,6 +105,8 @@ header {
   border-color: #65dff6;
   border-radius: 40px;
 }
+
+
 @media (max-width: 1600px) {
   header {
     padding: 10px 3%;
@@ -111,11 +114,12 @@ header {
   }
 }
 /* @media (max-width: 1300px) */
-@media (max-width: 1300px){
+@media (max-width: 1300px) {
   .menu-icon {
     display: block;
   }
   .navlist {
+    font-size: 16px;
     position: absolute;
     top: 100%;
     right: -100%;
@@ -136,7 +140,7 @@ header {
   }
   .searchbar {
     position: absolute;
-    top: 100%;
+    top: 120%;
     right: -100%;
     width: 300px;
     height: 450px;
@@ -175,4 +179,3 @@ header {
     margin-left: 350px;
   } */
 }
-
