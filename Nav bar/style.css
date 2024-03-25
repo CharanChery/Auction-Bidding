@@ -85,10 +85,10 @@ header {
   font-size: 25px;
   z-index: 10001;
   cursor: pointer;
-  display: none;  
+  display: none;
   border: 5px solid transparent;
 }
-.menu-icon:hover{
+.menu-icon:hover {
   font-size: 23px;
   border-radius: 20px;
 }
@@ -98,10 +98,11 @@ header {
   cursor: pointer;
   margin-right: 50px;
   margin-left: -50px;
+  border: 2px solid transparent;
 }
 .user-profile:hover {
-  border: 2px solid #65dff6;
-  border-radius: 100px;
+  border-color: #65dff6;
+  border-radius: 40px;
 }
 @media (max-width: 1600px) {
   header {
@@ -109,11 +110,12 @@ header {
     transition: 0.2s;
   }
 }
-@media (max-width: 1400px) {
+/* @media (max-width: 1300px) */
+@media (max-width: 1300px){
   .menu-icon {
     display: block;
   }
-  .navlist{
+  .navlist {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -132,7 +134,7 @@ header {
     display: block;
     margin: 7px 0;
   }
-  .searchbar{
+  .searchbar {
     position: absolute;
     top: 100%;
     right: -100%;
@@ -145,18 +147,36 @@ header {
     padding: 150px 50px;
     transition: all 0.55s ease;
   }
-  .searchbar input{
+  .searchbar input {
     display: block;
   }
-  .navlist.open, .searchbar.open {
+  .navlist.open,
+  .searchbar.open,
+  .user-profile.open {
     right: 0;
   }
-  .user-profile{
-    margin-left: 350px;
+  .user-profile {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    /* width: 10px;
+    height: 20px; */
+    margin-right: 130px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    display: flex;
+
+    /* padding: 10px 10px; */
+    transition: all 0.5s ease;
   }
+
+  /* .user-profile {
+    margin-left: 350px;
+  } */
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
@@ -165,8 +185,8 @@ header {
     top: 100%;
     right: -100%;
     width: 300px;
-    height: 40vh;
-    background: transparent;
+    height: 200px;
+    background: white;
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
@@ -179,13 +199,25 @@ header {
     display: block;
     margin: 7px 0;
   }
-  .navlist.open {
+  .searchbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 450px;
+    background: white;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    display: flex;
+    padding: 150px 50px;
+    transition: all 0.55s ease;
+  }
+  .searchbar input {
+    display: block;
+  }
+  .navlist.open,
+  .searchbar.open {
     right: 0;
   }
-  .user-profile {
-    display: block;
-  }
-  .searchbar {
-    display: block;
-  }
-}
+  
+} */
