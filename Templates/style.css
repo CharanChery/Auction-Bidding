@@ -3,7 +3,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #e5bdbd, #1de8b9);
-  background-image: url("https://www.q3tech.com/wp-content/uploads/2017/10/vglams2.png"); /* Adjust the path to your image */
+  /* background-image: url("https://www.q3tech.com/wp-content/uploads/2017/10/vglams2.png"); Adjust the path to your image */
+  background-image: url(pics/bids.png);
   background-size: cover; /* Cover the entire viewport */
   background-position: center; /* Center the background image */
   font-family: "Roboto", sans-serif; /* Apply the font to the entire document */
@@ -93,3 +94,5 @@ h1 {
   font-weight: 700; /* Adjust the font weight as needed */
   text-align: center; /* Center the text */
 }
+
+
